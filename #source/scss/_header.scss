@@ -328,6 +328,14 @@ header.header {
     .header__logo img {
         max-height: 44px;
     }
+
+    .header__nav {
+        height: calc(100vh - 60px);
+        padding: 40px 20px;
+    }
+
+
+
 }
 
 
