@@ -32,11 +32,22 @@ $(document).ready(function () {
     var swiper = new Swiper(".mySwiper1", {
         slidesPerView: "auto",
         spaceBetween: 20,
-        slidesOffsetBefore: 98,
+        // slidesOffsetBefore: 98,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
+        breakpoints: {
+            768: {
+                slidesOffsetBefore: 30,
+            },
+            991: {
+                slidesOffsetBefore: 30,
+            },
+            1200: {
+                slidesOffsetBefore: 98,
+            },
+          },
     });
 
 

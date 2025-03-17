@@ -493,6 +493,7 @@
 
 .contactsection {
     background: #fff;
+    padding-bottom: 79px;
 }
 
 .contactsection__form {
@@ -506,13 +507,11 @@
         font-size: 32px;
         font-weight: 600;
     }
-    
-
 }
 
 .inputfield {
     margin-bottom: 20px;
-    
+
     label {
         display: block;
         cursor: pointer;
@@ -543,7 +542,7 @@
         height: 40px;
         padding-top: 11px;
     }
-    
+
 }
 
 .submbtn {
@@ -557,10 +556,227 @@
     border-radius: 30px;
     font-size: 14px;
     font-weight: 500;
-    
 
     img {
         width: 20px;
         margin-left: 10px;
+    }
+}
+
+.contactsection__map {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contactsection__info {
+    ul {
+        list-style-type: none;
+        margin: 0 0 16px 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 20px;
+
+            p {
+                margin-bottom: 10px;
+                color: #082134;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+            }
+
+            a {
+                color: #082134;
+                font-weight: 500;
+                line-height: 120%;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #247DC0;
+                }
+            }
+        }
+    }
+}
+
+.contactsection__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contactsection__map {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+
+@media(max-width:1199.8px) {
+    .herosect__descr h1 {
+        font-size: 70px;
+        line-height: 100%;
+    }
+
+    .herosect {
+        height: 500px;
+    }
+
+    .herosect .imgwrap .el31 {
+        height: 500px;
+    }
+
+    .herosect__descr h1 span.darktext {
+        margin-left: -20%;
+    }
+
+    .herosect__descr p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .sect-subtitle {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .greysect h2 {
+        font-size: 32px;
+    }
+
+    .srvslidewrap .tar {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .srvslidewrap .title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .srvslidewrap p {
+        font-size: 18px;
+    }
+
+    .srvslidewrap p span {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .latest-news {
+        padding: 50px 30px 50px 30px;
+    }
+
+    .latest-news .sect-subtitle {
+        margin-bottom: 24px;
+    }
+
+    .latnewbig .descr h5 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .chooseyourtariff {
+        padding: 0 30px;
+    }
+
+    .chooseyourtariff__descr {
+        padding-left: 80px;
+    }
+
+    .contactsection__form {
+        padding: 30px 50px;
+    }
+
+    .contactsection__info ul li {
+        margin-bottom: 15px;
+    }
+
+    .contactsection__info ul li p {
+        margin-bottom: 5px;
+    }
+
+    .contactsection__map {
+        height: 230px;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .herosect .imgwrap .el31 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .herosect .imgwrap {
+        height: auto;
+        position: initial;
+    }
+
+    .herosect .el2 {
+        display: none;
+    }
+
+    .bluerowserv {
+        height: 80px;
+    }
+
+    .bluerowserv__item {
+        margin: 0 30px;
+    }
+
+    .latnewbig .imgwrap {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .latnewbig .descr h5 {
+        font-size: 24px;
+    }
+
+    .latnewbig {
+        margin-bottom: 30px;
+    }
+
+    .chooseyourtariff-wrap .bgel3 {
+        width: 300px;
+    }
+
+    .chooseyourtariff-wrap {
+        height: 340px;
+    }
+
+    .chooseyourtariff-wrap .bgel2 {
+        width: 40%;
+    }
+
+    .chooseyourtariff-wrap .bgel1 {
+        width: 100px;
+    }
+    
+    .greysect {
+        padding-bottom: 40px;
+    }
+
+    .contactsection__form {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contactsection__info ul li p,
+    .contactsection__info ul li a {
+        font-size: 18px;
     }
 }
