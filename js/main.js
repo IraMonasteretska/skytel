@@ -32,13 +32,13 @@ $(document).ready(function () {
     var swiper = new Swiper(".mySwiper1", {
         slidesPerView: "auto",
         spaceBetween: 20,
-        // slidesOffsetBefore: 98,
+        slidesOffsetBefore: 15,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
         breakpoints: {
-            768: {
+            576: {
                 slidesOffsetBefore: 30,
             },
             991: {
@@ -49,11 +49,6 @@ $(document).ready(function () {
             },
           },
     });
-
-
-
-
-
 
 
 

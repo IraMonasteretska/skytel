@@ -127,6 +127,12 @@ footer.footer {
     }
 }
 
+.footer__logo img {
+    max-width: 90px;
+}
+
+
+
 @media(max-width:1499.8px) {
     .totop {
         right: 3%;
