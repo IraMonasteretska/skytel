@@ -1,0 +1,170 @@
+.blog-section {
+    padding: 40px 0 0 0;
+}
+
+.mainpost {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    height: 580px;
+    display: flex;
+    align-items: flex-end;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(rgba(#19639A, 0), #0C3452);
+    }
+
+    .mainpost__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .mainpost__description {
+        position: relative;
+        z-index: 2;
+        padding: 38px 68px;
+
+        h5 {
+            margin-bottom: 16px;
+            color: #fff;
+            font-size: 32px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    &:hover {
+        h5 {
+            color: #FF6B17;
+        }
+    }
+}
+
+.recentposts {
+    padding: 40px 0 0 0;
+
+    .title {
+        margin-bottom: 32px;
+        color: #247DC0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+.recpost-item {
+    display: block;
+    margin-bottom: 32px;
+
+    .imgwrap {
+        height: 209px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 16px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            transition: 0.5s;
+            transform: scale(1.05);
+        }
+    }
+
+    .description {
+        position: relative;
+
+        .arrimg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 24px;
+
+            path {
+                transition: 0.3s;
+            }
+        }
+
+        h5 {
+            color: #082134;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-right: 40px;
+            transition: 0.3s;
+        }
+
+        p {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #254965;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .shares {
+            p {
+                margin: 0;
+                color: #082134;
+                font-size: 12px;
+                font-weight: 500;
+                position: relative;
+                padding-left: 20px;
+
+                img {
+                    width: 16px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .description {
+            h5 {
+                color: #FF6B17;
+            }
+
+            .arrimg {
+                path {
+                    fill: #FF6B17;
+                }
+            }
+        }
+
+        .imgwrap {
+            img {
+                transform: scale(1.01);
+            }
+        }
+    }
+
+
+
+}
