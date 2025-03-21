@@ -62,13 +62,33 @@
 }
 
 .recentposts {
-    padding: 40px 0 0 0;
+    padding: 40px 0 110px 0;
 
     .title {
         margin-bottom: 32px;
         color: #247DC0;
         font-size: 20px;
         font-weight: 600;
+    }
+
+    .loadmore {
+        max-width: 191px;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+        border-radius: 30px;
+        margin-top: 28px;
+        border: 1px solid #247DC0;
+        color: #247DC0;
+        font-size: 16px;
+        transition: 0.3s;
+
+        &:hover {
+            background: #247DC0;
+            color: #fff;
+        }
     }
 }
 
@@ -164,6 +184,117 @@
             }
         }
     }
+
+
+
+}
+
+@media(max-width:1599.8px) {
+    .mainpost {
+        height: 500px;
+    }
+
+    .mainpost .mainpost__bg {
+        object-position: 0 0;
+    }
+
+    .recentposts {
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .recentposts .loadmore {
+        margin-top: 20px;
+    }
+
+    .recpost-item .imgwrap {
+        height: 180px;
+    }
+
+    .recentposts .title {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .mainpost .mainpost__description {
+        padding: 20px 40px 30px;
+    }
+
+    .mainpost {
+        height: 400px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .mainpost .mainpost__description {
+        padding: 15px 20px 20px 20px;
+    }
+
+    .mainpost .mainpost__description h5 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .mainpost .mainpost__description p {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .mainpost {
+        height: 300px;
+    }
+
+    .recpost-item .imgwrap {
+        height: 160px;
+    }
+
+    .recpost-item .description h5 br {
+        display: none;
+    }
+
+    .recpost-item .description h5 {
+        margin-bottom: 8px;
+    }
+
+    .recentposts {
+        padding-bottom: 60px;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .mainpost {
+        height: auto;
+        min-height: 270px;
+    }
+
+    .mainpost .mainpost__description h5 {
+        font-size: 21px;
+    }
+
+    .mainpost .mainpost__description p {
+        font-size: 13px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .recentposts {
+        padding-top: 20px;
+    }
+
+    .recpost-item .imgwrap {
+        height: auto;
+    }
+
+    .recentposts .loadmore {
+        margin-top: 0;
+    }
+
 
 
 
