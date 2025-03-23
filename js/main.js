@@ -50,6 +50,30 @@ $(document).ready(function () {
           },
     });
 
+    
+    // slider - Recent blog posts
+    var swiper = new Swiper(".blogpost-slider", {
+        slidesPerView: 1,
+        loop: true,
+        speed: 900,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+          },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+          },
+    });
+
 
 
 
