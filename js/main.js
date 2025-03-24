@@ -74,6 +74,17 @@ $(document).ready(function () {
           },
     });
 
+    // tab
+    $('.tab').click(function(e){
+        e.preventDefault();
+        let target = $(this).attr('href');
+        $('.tab').removeClass('active');
+        $('.tab-body').removeClass('active').hide();
+        $(this).addClass('active');
+        $(target).addClass('active').fadeIn(900);
+        
+    });
+
 
 
 
