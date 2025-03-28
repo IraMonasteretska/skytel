@@ -82,7 +82,6 @@ $(document).ready(function () {
         $('.tab-body').removeClass('active').hide();
         $(this).addClass('active');
         $(target).addClass('active').fadeIn(900);
-        
     });
 
 
