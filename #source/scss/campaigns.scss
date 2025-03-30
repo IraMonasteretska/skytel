@@ -186,7 +186,7 @@
         padding: 0 10px 10px;
         position: relative;
         cursor: pointer;
-        transition: .3s ease;
+        transition: .15s ease-in-out;
         font-family: "Noto Sans Georgian", sans-serif;
 
         &:last-child {
@@ -196,20 +196,25 @@
         &:after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
+            display: block;
             height: 2px;
+            width: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: #247DC0;
             transition: .3s ease;
+            margin: 0 auto;
         }
 
-        &:hover,
+        &:hover{
+            color: #247DC0;
+        }
+
         &.active {
             color: #247DC0;
 
             &:after {
-                left: 0;
                 width: 100%;
             }
         }

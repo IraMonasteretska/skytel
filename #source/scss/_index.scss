@@ -177,7 +177,7 @@
                 background: #247DC0;
                 height: 2px;
                 width: 0;
-                transition: 0.3s;
+                transition: 0.3s ease;
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -229,12 +229,19 @@
     position: relative;
 
     .tar {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
         color: #247DC0;
         font-size: 24px;
         font-weight: 600;
         font-family: "Noto Sans Georgian", sans-serif;
-        padding-right: 60px;
+        // padding-right: 60px;
+    }
+
+    .name {
+        color: #247DC0;
+        margin-bottom: 4px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     .title {
@@ -254,7 +261,7 @@
             display: block;
             margin-top: 5px;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 400;
             line-height: 120%;
         }
     }
@@ -289,6 +296,10 @@
         bottom: 34px;
         right: 36px;
         max-width: 48px;
+        img{
+            width: 100%;
+            background-size: cover;
+        }
     }
 }
 
@@ -935,12 +946,12 @@
             width: 100%;
             max-width: 100%;
             margin: 0;
-            text-align: center;
+            display: flex;
             justify-content: center;
             padding: 0 20px;
 
             button {
-                width: 100%;
+                width: fit-content;
                 text-align: center;
                 margin: 0 0 10px 0 !important;
             }
