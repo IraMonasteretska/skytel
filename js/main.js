@@ -101,7 +101,8 @@ $(document).ready(function () {
     }
 
 
-
+// plyr
+const player = new Plyr('#player');
 
 
 
