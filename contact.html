@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campaigns page single</title>
+    <title>Contact page</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/select2.css">
@@ -56,102 +56,86 @@
     <main class="main">
         <section class="topsect">
             <div class="container">
-                <div class="topsect__inner" style="background-color: #BDE2F5;">
+                <div class="topsect__inner" style="background-color: #C4E9FB;">
                     <div class="topsect__descr">
                         <h1>
-                            Online Order
+                            Contact
                         </h1>
                     </div>
-                    <img src="img/campaigns/single_image.png" alt="Top background">
+                    <img src="img/contact/top_image.png" alt="Top background">
                 </div>
             </div>
         </section>
 
-        <section class="order">
+        <section class="contactsect">
             <div class="container">
-                <div class="order__inner">
-                    <form action="GET">
-                        <div class="order__fields">
-                            <h2>
-                                Order the selected package
-                            </h2>
-                            <div class="form-fields">
-                                <div class="inputform">
-                                    <label for="pn">Personal Number</label>
-                                    <input type="text" id="pn" placeholder="Personal Number">
-                                </div>
-                                <div class="inputform">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" placeholder="Name">
-                                </div>
-                                <div class="inputform">
-                                    <label for="district">District</label>
-                                    <select name="district" id="district" class="styledselect" data-placeholder="District">
-                                        <!-- <option></option> -->
-                                        <option value="1">District 1</option>
-                                        <option value="2">District 2</option>
-                                    </select>
-                                </div>
-                                <div class="inputform">
-                                    <label for="area">Area</label>
-                                    <select name="area" id="area" class="styledselect" data-placeholder="Area">
-                                        <!-- <option></option> -->
-                                        <option value="1">Area 1</option>
-                                        <option value="2">Area 2</option>
-                                    </select>
-                                </div>
-                                <div class="inputform">
-                                    <label for="street">Street</label>
-                                    <input type="text" id="street" placeholder="Street">
-                                </div>
-                                <div class="inputform">
-                                    <label for="street-number">Street number</label>
-                                    <input type="text" id="street-number" placeholder="№">
-                                </div>
-                                <div class="inputform fullwidth">
-                                    <label for="address">Legal Address</label>
-                                    <input type="text" id="address" placeholder="Legal Address">
-                                </div>
-                                <div class="inputform">
-                                    <label for="contact-person">Contact Person</label>
-                                    <input type="text" id="contact-person" placeholder="Contact Person">
-                                </div>
-                                <div class="inputform">
-                                    <label for="street-number">Email</label>
-                                    <input type="email" id="email" placeholder="Email">
-                                </div>
-                                <div class="inputform">
-                                    <label for="mobile">Mobile</label>
-                                    <input type="text" id="mobile" placeholder="Mobile">
-                                </div>
-                                <div class="inputform">
-                                    <label for="phone-number">Phone Number</label>
-                                    <input type="text" id="phone-number" placeholder="Phone Number">
-                                </div>
+                <div class="contactsect__wrapper">
+                    <div class="contactsect__info">
+                        <h2>
+                            Contact information
+                        </h2>
+                        <p>
+                            Skytel offers high-quality services, competitive rates and flexible payment.
+                        </p>
+                        <ul>
+                            <li>
+                                <img src="img/contact/location-icon.svg" alt="icon">
+                                <p>Office location
+                                    <a href="https://maps.app.goo.gl/pCd27EqGfYxY2eus7">Guramishvili Ave 23a, Tbilisi</a>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/contact/email-icon.svg" alt="icon">
+                                <p>Business email
+                                    <a href="mailto:info@skytel.ge">info@skytel.ge</a>
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/contact/phone-icon.svg" alt="icon">
+                                <p>Office phone
+                                    <a href="tel:0322 500 300">0322 500 300</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contactsect__form">
+                        <form>
+                            <div class="inputfield">
+                                <label for="name">
+                                    Full name
+                                </label>
+                                <input type="text" placeholder="Full name">
                             </div>
-                        </div>
-                        <div class="order__package">
-                            <h2>
-                                Fiber - Optic Internet
-                            </h2>
-                            <div class="order__box">
-                                <div class="info">
-                                    <img src="img/main/serv2.svg" alt="element" class="element">
-                                    <p class="tariff">Standard</p>
-                                    <p class="name">30 GEL</p>
-                                    <div class="speed">
-                                        <p>
-                                            30 Mb/s
-                                            <span>+ Installation 0 GEL</span>
-                                        </p>
-                                        <img src="img/main/serv4.svg" alt="icon">
-                                    </div>
-                                </div>
-                                <input type="submit" class="order-btn bluebtn" value="Confirm Registration">
+                            <div class="inputfield">
+                                <label for="phone">
+                                    Phone number
+                                </label>
+                                <input type="text" placeholder="Phone number">
                             </div>
-                        </div>
-                    </form>
+                            <div class="inputfield fullwidth">
+                                <label for="email">
+                                    Email
+                                </label>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="inputfield fullwidth">
+                                <label for="message">
+                                    Message
+                                </label>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <input class="bluebtn" type="submit" class="submit-btn" value="Send Message">
+                        </form>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="mapsect">
+            <div class="container">
+                <a href="https://maps.app.goo.gl/pCd27EqGfYxY2eus7" target="_blank" class="map">
+                    <img src="img/contact/map.png" alt="Map">
+                </a>
             </div>
         </section>
 
