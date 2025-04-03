@@ -1,0 +1,160 @@
+.coveragehero__wrap {
+    background: #BEE7F9;
+    border-radius: 30px;
+    padding: 25px 60px 25px 98px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px 0 34px;
+
+    h1 {
+        width: 100%;
+        max-width: 53%;
+        flex: 0 0 53%;
+        margin: 0;
+        color: #247DC0;
+        font-size: 46px;
+        font-weight: 500;
+    }
+
+    img {
+        width: 100%;
+        max-width: 47%;
+        flex: 0 0 47%;
+    }
+}
+
+.coveragevillage {
+    margin-bottom: 24px;
+
+    p {
+        position: relative;
+        margin: 0;
+        padding-left: 60px;
+        color: #247DC0;
+        font-size: 14px;
+
+        img {
+            width: 40px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        padding: 2px 20px;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 14px;
+        background: linear-gradient(180deg, #4A9CD5 0%, #247DC0 100%);
+
+        &:hover {
+            background: #FF6B17;
+        }
+    }
+}
+
+#googleMap {
+    margin-bottom: 60px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(max-width:991.8px) {
+
+    .coveragehero__wrap {
+        padding: 25px 25px 25px 40px;
+    }
+
+    .coveragehero__wrap h1 {
+        font-size: 36px;
+    }
+
+    #googleMap {
+        height: 500px !important;
+    }
+}
+
+
+@media(max-width:767.8px) {
+    .coveragehero__wrap h1,
+    .coveragehero__wrap img {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .coveragevillage p {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .coveragehero__wrap {
+        padding: 25px 15px;
+    }
+
+    .coveragehero__wrap h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .coveragevillage p {
+        margin-bottom: 20px;
+    }
+
+    #googleMap {
+        height: 350px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
+.gm-ui-hover-effect {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 4px 4px 4px 0 !important;
+
+    span {
+        margin: 0 !important;
+    }
+}
+
+.gm-style-iw-d {
+    padding: 0 8px 8px 0 !important;
+    overflow: initial !important;
+    min-width: 100px;
+}
+
+.marker {
+    transition: transform 0.3s ease-in-out;
+}
+
+.marker:hover {
+    transform: scale(1.2); /* Збільшуємо маркер при наведенні */
+}
+
